@@ -1,0 +1,42 @@
+# Credit Card Fraud Detection — Advanced (Task 4)
+
+Task 2's fraud detector, taken further: SMOTE oversampling, ROC curve comparison,
+feature importance, and SHAP explainability. Built as Task 4 of a 5-task ML internship.
+
+## What's new vs Task 2
+- **SMOTE** (synthetic oversampling) instead of `class_weight='balanced'`
+- **ROC curves** for all 3 models plotted together, not just an ROC-AUC number
+- **Feature importance** — which columns actually drive Random Forest's decisions
+- **SHAP explainability** — why one specific transaction was flagged as fraud
+
+## Dataset
+[Credit Card Fraud Detection](https://www.kaggle.com/datasets/mlg-ulb/creditcardfraud) (Kaggle, ULB)
+Download `creditcard.csv` and place it in this folder (not committed — see `.gitignore`).
+
+## Setup
+```bash
+python -m venv venv
+source venv/bin/activate        # Windows: venv\Scripts\activate
+pip install -r requirements.txt
+```
+
+## Usage
+```bash
+python train_fraud_advanced.py
+```
+Produces `roc_curves.png`, `feature_importance.png`, `shap_summary.png`, and the saved model.
+
+## Files
+| File | Purpose |
+|---|---|
+| `train_fraud_advanced.py` | Full pipeline: SMOTE, training, ROC curves, feature importance, SHAP |
+| `requirements.txt` | Python dependencies |
+
+## Results
+_Fill in after running on the real dataset:_
+
+| Model | Precision | Recall | F1 | ROC-AUC |
+|---|---|---|---|---|
+| Logistic Regression | – | – | – | – |
+| Decision Tree | – | – | – | – |
+| Random Forest | – | – | – | – |
