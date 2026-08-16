@@ -5,3 +5,4 @@ joblib
 matplotlib
 imbalanced-learn
 shap
+streamlit
